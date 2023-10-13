@@ -35,7 +35,7 @@ async function getAllPosts() {
 
     title.innerText = post.title;
     body.innerText = post.body;
-    link.innerText = "Comentar Post";
+    link.innerText = "Comment on the post";
     link.setAttribute("href", `/post.html?id=${post.id}`);
 
     div.appendChild(title);
@@ -97,6 +97,9 @@ async function postComment(comment) {
   const data = await response.json();
 
   createComment(data);
+
+  emailInput.value = "";
+  bodyInput.value = "";
 }
 
 if (!postId) {
@@ -104,7 +107,7 @@ if (!postId) {
 } else {
   getPost(postId);
 
-  commentForm.addEventListener("submit", (e) => {
+  commentForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     let comment = {
@@ -114,6 +117,7 @@ if (!postId) {
 
     comment = JSON.stringify(comment);
 
-    postComment(comment);
+    await postComment(comment);
   });
 }
+
