@@ -1,7 +1,7 @@
 # simple-blog-website 📘
 
 ## Description
-The "remind-app" project is a user-friendly and simple efficient reminder application designed to help users stay organized and never miss important tasks or events
+The "simple-blog-website" project is a simulated blog platform, featuring a collection of fictional blog posts. Users have the ability to interact with these posts by leaving comments. These comments are displayed beneath each post, allowing users to engage in discussions and share their thoughts on the content.
 
 ## How to Use the Project
 
@@ -12,7 +12,7 @@ If you want to run the project on your own computer, follow the steps below:
 2. Open the terminal and type the following command to clone the repository:
 
     ```
-   git clone https://github.com/luizavalentini/remind-app.git
+   git clone https://github.com/luizavalentini/simple-blog-website.git
    ```
 
 ### Starting the Project
