@@ -1,4 +1,4 @@
-# simple-blog-website 📘
+# simple-blog-website 📘💻
 
 ## Description
 The "simple-blog-website" project is a simulated blog platform, featuring a collection of fictional blog posts. Users have the ability to interact with these posts by leaving comments. These comments are displayed beneath each post, allowing users to engage in discussions and share their thoughts on the content.
